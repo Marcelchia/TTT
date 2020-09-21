@@ -1,2 +1,2 @@
 # TTT
-Game
+Connect 3
