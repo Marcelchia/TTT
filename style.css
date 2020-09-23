@@ -64,7 +64,7 @@ button {
 }
 
 #scoreboard {
-    background-color: #ffcc99;
+    background-color: #99bbff;
     width: 450px;
     height: 50px;
     display: flex;
@@ -78,7 +78,7 @@ button {
 }
 
 #playerturn {
-    background-color: #ff9999;
+    background-color: #99bbff;
     width: 450px;
     height: 50px;
     display: flex;
