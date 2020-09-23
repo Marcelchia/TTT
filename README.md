@@ -1,2 +1,0 @@
-# TTT
-Connect 3
