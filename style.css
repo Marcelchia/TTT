@@ -1,0 +1,90 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+     background-color: #ffffe6;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin: auto;
+    padding: 5px;
+
+}
+
+button {
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 20px;
+     border-radius:50%;
+}
+
+#gameboard {
+    height: 750px;
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+     margin-bottom: 10px;
+    margin: auto;
+
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    border: solid black 1px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#winoutput {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+}
+
+#scoreboard {
+    background-color: #ffcc99;
+    width: 450px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    font-size: 25px;
+    margin: auto;
+     margin-bottom: 20px;
+}
+
+#playerturn {
+    background-color: #ff9999;
+    width: 450px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+}
