@@ -3,4 +3,18 @@
 Intermediate Challenge
 where N=5
 
-1. Initializing the board
+
+SET UP 
+-Initializing gameplay that contains empty string
+-create game play via dom
+-add eventlistener to each grid element of board
+
+GAME BEGINS
+-start button erase
+-Key player names
+-OnClick, ensures board is locked and cant be reclicked
+-set timer for random move per turn
+-Check win condition
+-Display win alert
+
+
