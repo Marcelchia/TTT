@@ -25,7 +25,7 @@ function initGameBoard() {
   for (let i = 0; i < boardSize; i++) {
     gamePlayArr.push([]);
     for (let x = 0; x < boardSize; x++) {
-      gamePlayArr.push([]);
+      gamePlayArr[i].push(" ");
       let newDiv = document.createElement("div");
       newDiv.className = "square";
       newDiv.textContent = " ";
@@ -68,7 +68,7 @@ function onClick(event) {
     clearTimeout(randomMoveTimeout);
   }
   if (winAlert === undefined) {
-    randomMoveTimeout = setTimeout(randomMove, 5000);
+    randomMoveTimeout = setTimeout(randomMove, 3000);
   }
 }
 
@@ -88,7 +88,7 @@ function startGameButtonErase() {
       if (randomMoveTimeout !== 0) {
         clearTimeout(randomMoveTimeout);
       }
-      randomMoveTimeout = setTimeout(randomMove, 5000);
+      randomMoveTimeout = setTimeout(randomMove, 3000);
     }
   });
 }
@@ -188,9 +188,6 @@ function restartGame() {
   });
 }
 
-
-
-
 function randomMove() {
   let emptyIdArr = [];
   let emptyIds = [];
@@ -231,7 +228,7 @@ function randomMove() {
     clearTimeout(randomMoveTimeout);
   }
   if (winAlert === undefined) {
-    randomMoveTimeout = setTimeout(randomMove, 5000);
+    randomMoveTimeout = setTimeout(randomMove, 3000);
   }
 }
 
