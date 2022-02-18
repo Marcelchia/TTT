@@ -1,92 +1,83 @@
-body {
-     font-family: 'Arvo', serif;
-		font-family: 'Playfair Display', serif;
-		font-family: 'Titillium Web', sans-serif;
-     background-color: white;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Itim", cursive;
 }
 
-h1 {
-    font-size: 60px;
-    margin: 30px 0;
-    text-align: center;
+.background {
+  background-color: white;
+  height: 100vh;
+  padding-top: 1px;
 }
 
-input {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 15px;
-    margin: auto;
-    padding: 5px;
-
+.title {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
 }
 
-button {
-    text-align: center;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: auto;
-    margin-bottom: 20px;
-     border-radius:50%;
+.display {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-#gameboard {
-    height: 750px;
-    width: 750px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-     margin-bottom: 10px;
-    margin: auto;
-
+.hide {
+  display: none;
 }
 
-.square {
-    height: 150px;
-    width: 150px;
-    font-size: 100px;
-    border: solid black 1px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
 }
 
-.hidden {
-    display: none;
+.tile {
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
 }
 
-#winoutput {
-    color: red;
-    font-size: 25px;
-    text-align: center;
+.playerX {
+  color: red;
 }
 
-#scoreboard {
-    background-color: #99bbff;
-    width: 450px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-
-    font-size: 25px;
-    margin: auto;
-     margin-bottom: 20px;
+.playerO {
+  color: green;
 }
 
-#playerturn {
-    background-color: #99bbff;
-    width: 450px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
 
-    font-size: 25px;
-    margin: auto;
-    margin-bottom: 20px;
+.controls button {
+  color: black;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.restart {
+  background-color: #498afb;
+}
+
+#reset {
+  background-color: blue;
 }
