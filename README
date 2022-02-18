@@ -1,9 +1,5 @@
 
 
-Intermediate Challenge
-where N=5
-
-
 SET UP 
 -Initializing gameplay that contains empty string
 -create game play via dom
@@ -11,7 +7,6 @@ SET UP
 
 GAME BEGINS
 -start button erase
--Key player names
 -OnClick, ensures board is locked and cant be reclicked
 -set timer for random move per turn
 -Check win condition
